@@ -1,0 +1,18 @@
+import streamlit as st
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Create sample data
+data = {
+    'Category': ['A', 'B', 'C', 'D'],
+    'Value': [10, 15, 7, 12]
+}
+df = pd.DataFrame(data)
+`
+# Streamlit app code
+st.title('Bar Chart Example')
+st.bar_chart(df)
+
+# Show dataframe
+st.subheader('Data')
+st.write(df)
